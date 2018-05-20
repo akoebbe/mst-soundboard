@@ -13,8 +13,7 @@ var activeBuffers = [];
 // mp3 files and sources
 var soundfiles = ["sound1.mp3",
 		  "sound2.mp3",
-		  "sound4.mp3"
-		 ];
+		  "sound4.mp3"];
 				  
 var sourcefiles = [];
 // buffer loader class
