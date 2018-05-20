@@ -11,33 +11,10 @@ var activeBuffers = [];
 
 
 // mp3 files and sources
-var soundfiles = ["heritage.mp3",
-                  "hahaha.mp3",
-				  "Just being a dick.mp3",
-				  "Please Dont Be That Guy.mp3",
-				  "Please.mp3",
-				  "ughh.mp3",
-				  "umm.mp3",
-				  "wew lad.mp3",
-				  "hitlergaseurope.mp3",
-				  "lex obama.mp3",
-				  "its me bog.mp3",
-				  "omg!!!.mp3",
-				  "shut up mack.mp3",
-				  "Yeah!.mp3",
-				  "your dumb.mp3",
-				  "your fucking so dumb.mp3",
-				  "scan a cunt down.mp3",
-				  "ur fuckin done.mp3",
-				  "dick.mp3",
-				  "do it.mp3",
-				  "Its Treason Then.mp3",
-				  "Master Windu.mp3",
-				  "The Senate.mp3",
-				  "insurance is out.mp3",
-				  "hang urself.mp3",
-				  "not even mad.mp3",
-				  "Gassed.mp3"];
+var soundfiles = ["sound1.mp3",
+		  "sound2.mp3",
+		  "sound4.mp3"
+		 ];
 				  
 var sourcefiles = [];
 // buffer loader class
