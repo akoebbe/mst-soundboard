@@ -11,9 +11,29 @@ var activeBuffers = [];
 
 
 // mp3 files and sources
-var soundfiles = ["sound1.mp3",
-		  "sound2.mp3",
-		  "sound4.mp3"];
+var soundfiles = [
+    "Bumper.mp3",
+    "Crowd Goes Wild.mp3",
+    "Forklift.mp3",
+    "Guitar.mp3",
+    "Huzzah.mp3",
+    "It Stinks.mp3",
+    "It's Funny.mp3",
+    "Krankor Laugh.mp3",
+    "McCloud.mp3",
+    "Movie in the Hole.mp3",
+    "OOOh, What is That.mp3",
+    "Oh Bite me, it's Fun.mp3",
+    "Poopie.mp3",
+    "Preeetty Niice.mp3",
+    "SLEEP.mp3",
+    "Sampo.mp3",
+    "Shut Up.mp3",
+    "Snakes.mp3",
+    "Time for go to bed.mp3",
+    "We Like It Very Much.mp3",
+    "You Guys Are So Weird.mp3"
+];
 				  
 var sourcefiles = [];
 // buffer loader class
@@ -99,9 +119,13 @@ function loadFilesInMemory() {
     window.AudioContext = window.AudioContext || window.webkitAudioContext;
     context = new AudioContext();
 
+    urls = soundfiles.map(function(filename) {
+        return 'sounds/' + filename;
+    });
+
     bufferLoader = new BufferLoader(
         context,
-        soundfiles,
+        urls,
         finishedLoading
     );
 
@@ -135,7 +159,7 @@ function createHotkeys() {
     $.each(soundfiles, function (i) {
         var btn = document.getElementById(i);
         var badge = document.createElement("span");
-        badge.classList.add("badge", "hidden");
+        badge.classList.add("badge", "badge-secondary");
         badge.style.marginLeft = "1.2em";
         badge.innerHTML = String.fromCharCode(hotkeys[i]);
         btn.appendChild(badge);
